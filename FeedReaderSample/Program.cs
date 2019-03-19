@@ -26,6 +26,11 @@ namespace FeedReaderSample
                 if (feedUrl == null)
                     continue;
 
+                if(feedUrl.StartsWith("/"))
+                {
+                    feedUrl = string.Format("{0}{1}", url, feedUrl.Substring(1));
+                }
+
                 var feed = FeedReader.Read(feedUrl);
 
                 Console.WriteLine("Feed Title: " + feed.Title);

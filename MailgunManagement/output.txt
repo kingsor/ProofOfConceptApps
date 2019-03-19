@@ -1,0 +1,83 @@
+﻿[
+  {
+    "_id": "5c903824269d9920f6faf814",
+    "index": 0,
+    "guid": "4f607f37-56dd-4397-aae5-1eca9f43338f",
+    "isActive": false,
+    "balance": "$3,304.11",
+    "age": 33,
+    "eyeColor": "brown",
+    "name": "Briana Gillespie",
+    "gender": "female",
+    "company": "SUPPORTAL",
+    "email": "brianagillespie@supportal.com",
+    "phone": "+1 (910) 571-3239",
+    "address": "323 Stillwell Avenue, Emerald, Colorado, 4192",
+    "registered": "2017-04-16T02:12:43 -02:00",
+    "latitude": 64.11441,
+    "longitude": -78.848653,
+    "tags": [
+      "id",
+      "proident",
+      "quis",
+      "sunt",
+      "commodo"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Camacho Bradford"
+      },
+      {
+        "id": 1,
+        "name": "Haynes Ray"
+      },
+      {
+        "id": 2,
+        "name": "Langley Kirby"
+      }
+    ],
+    "greeting": "Hello, Briana Gillespie! You have 2 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5c903824c8a2a046bbddf69c",
+    "index": 1,
+    "guid": "381fdaf6-bd0b-4cd5-ba70-3ff4d8294573",
+    "isActive": true,
+    "balance": "$2,937.48",
+    "age": 38,
+    "eyeColor": "green",
+    "name": "Drake Cotton",
+    "gender": "male",
+    "company": "GEEKUS",
+    "email": "drakecotton@geekus.com",
+    "phone": "+1 (866) 449-2589",
+    "address": "607 Neptune Avenue, Cartwright, Northern Mariana Islands, 3807",
+    "registered": "2018-05-27T01:12:36 -02:00",
+    "latitude": 89.069091,
+    "longitude": -94.567391,
+    "tags": [
+      "quis",
+      "eu",
+      "commodo",
+      "occaecat"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Daisy Bishop"
+      },
+      {
+        "id": 1,
+        "name": "Stafford Harrison"
+      },
+      {
+        "id": 2,
+        "name": "Hughes Cross"
+      }
+    ],
+    "greeting": "Hello, Drake Cotton! You have 6 unread messages.",
+    "favoriteFruit": "apple"
+  }
+]
