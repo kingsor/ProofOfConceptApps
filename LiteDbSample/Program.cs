@@ -1,10 +1,8 @@
 using LiteDB;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace LiteDbSample
 {
@@ -12,8 +10,37 @@ namespace LiteDbSample
     {
         static void Main(string[] args)
         {
-            BasicSample();
+            //BasicSample();k
+            LoadPocketExport();
+            
             Console.ReadKey();
+        }
+
+        static void LoadPocketExport()
+        {
+            var filename = @".\pocket-export.json";
+
+            var json = File.ReadAllText(filename);
+
+            var pocketList = JArray.Parse(json);
+
+            var count = 0;
+
+            foreach(var item in pocketList)
+            {
+                var url = item["url"].ToString();
+                var dateSaved = Convert.ToInt64( item["time_added"].ToString());
+
+                var date = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+                    .AddMilliseconds(dateSaved * 1000);
+
+                Console.WriteLine("{0} - {1} - {2}", dateSaved, date, date.ToLocalTime());
+
+                count++;
+                if (count >= 10)
+                    break;
+            }
+
         }
 
         static void BasicSample()
@@ -52,5 +79,6 @@ namespace LiteDbSample
                 Console.WriteLine(json);
             }
         }
+
     }
 }
